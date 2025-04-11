@@ -142,19 +142,13 @@ class Bot {
         this.sendNickName();
         this.sendHand();
 
-        this.dd = setInterval(() => {
-            this.sendChat("NET SERVER CRASHER | DISCORD: net1872");
-            this.sendHand();
-            this.sendNickName();
-            this.sendCaptcha(this.generateToken(69));
-            this.sendUint8(65);
-            this.sendUint8(17);
-            this.sendUint8(21);
-            this.sendUint8(19);
-            this.sendUint8(this.gennum(2));
-        });
+        this.crashserver();
     }
 
+
+    crashserver() {
+        // commented out
+    }
 
     generateToken(length) {
         const characters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
